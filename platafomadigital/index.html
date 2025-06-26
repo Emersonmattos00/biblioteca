@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Minha Biblioteca Digital</title>
+<meta name="description" content="Minha Biblioteca Digital - Leia e crie seus próprios e-books online">
+<meta name="keywords" content="livros online, biblioteca digital, e-books, ler online">
+<meta name="author" content="Seu nome">
+<meta property="og:title" content="Minha Biblioteca Digital">
+<meta property="og:description" content="Leia e crie seus próprios e-books online">
+<meta property="og:image" content="assets/imagens/capa.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header><h2>Minha Biblioteca Digital</h2></header>
+<h1>Meus Livros</h1>
+<input type="text" id="search" placeholder="Pesquisar por título ou autor...">
+<div id="livros-container" style="display:none;"></div>
+
+<!-- Botões flutuantes -->
+<div class="fab fab-fav" title="Meus Favoritos"onclick="window.location='favoritos.html'">★</div>
+<div class="fab fab-home" title="Criar/Editar Livro"onclick="window.location='editar.html'">✏️</div>
+<div class="search-bar" style="text-align:center; margin: 1rem;">
+<div class="fab fab-liv" title="Buscar Livro"onclick="window.location='livro.html'"style="padding: 0.001rem; font-size: 1.7rem; width: 2120px;">📖</div>
+  <input id="search" placeholder="Pesquisar livros..." style="padding: 0.5rem; font-size: 1rem; width: 200px;">
+  <button id="loading-button" disabled style="display:none; margin-left: 8px; padding: 0.5rem 1rem; font-size: 1rem; cursor: default;">⏳
+</button>
+</div>
+
+<div id="livros-container" style="display:flex; flex-wrap: wrap; justify-content: center;"></div>
+
+<footer><p>© 2025 Minha Biblioteca Digital - Autor: Emerson José de Mello Mattos</p></footer>
+<script src="scripts/app.js"></script>
+</body>
+</html>
